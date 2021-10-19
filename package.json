@@ -22,34 +22,38 @@
     "lint": "eslint src/**/*.ts",
     "lint-fix": "eslint --fix src/**/*.ts",
     "pack": "ncc build",
-    "test": "jest"
+    "test": "jest",
+    "prepare": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "dependencies": {
-    "@actions/core": "^1.2.0",
+    "@actions/core": "^1.2.6",
     "@octokit/plugin-retry": "^3.0.1",
     "@octokit/plugin-throttling": "^3.2.0",
     "@octokit/rest": "^17.1.0",
     "p-limit": "^2.3.0",
-    "tweetsodium": "0.0.4"
+    "tweetsodium": "0.0.4",
+    "@snyk/protect": "latest"
   },
   "devDependencies": {
     "@octokit/fixtures": "^21.0.2",
     "@octokit/types": "^2.5.0",
-    "@types/jest": "^24.0.23",
+    "@types/jest": "^25.1.0",
     "@types/node": "^12.12.30",
     "@types/tmp": "^0.1.0",
     "@typescript-eslint/parser": "^2.24.0",
     "@zeit/ncc": "^0.20.5",
-    "eslint": "^5.16.0",
-    "eslint-plugin-github": "^2.0.0",
+    "eslint": "^7.16.0",
+    "eslint-plugin-github": "^3.2.1",
     "eslint-plugin-jest": "^22.21.0",
-    "jest": "^24.9.0",
-    "jest-circus": "^24.9.0",
+    "jest": "^26.0.0",
+    "jest-circus": "^25.0.0",
     "jest-environment-uint8array": "^1.0.0",
     "js-yaml": "^3.13.1",
     "nock": "^12.0.3",
     "prettier": "^1.19.1",
-    "ts-jest": "^24.2.0",
+    "ts-jest": "^25.3.0",
     "typescript": "^3.6.4"
-  }
+  },
+  "snyk": true
 }
