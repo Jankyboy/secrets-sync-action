@@ -40,7 +40,7 @@
     "@semantic-release/github": "^9.0.3",
     "@semantic-release/release-notes-generator": "^11.0.4",
     "@types/jest": "^24.0.23",
-    "@types/node": "^12.12.30",
+    "@types/node": "^12.12.61",
     "@types/tmp": "^0.1.0",
     "@typescript-eslint/parser": "^2.24.0",
     "@vercel/ncc": "^0.36.1",
